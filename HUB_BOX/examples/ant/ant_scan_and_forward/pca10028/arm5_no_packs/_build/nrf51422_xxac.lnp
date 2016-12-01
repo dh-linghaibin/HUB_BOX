@@ -1,0 +1,23 @@
+--cpu Cortex-M0
+".\_build\deviceregistry.o"
+".\_build\main.o"
+".\_build\message_cache.o"
+".\_build\scan_and_forward.o"
+".\_build\bsp.o"
+".\_build\ant_channel_config.o"
+".\_build\ant_search_config.o"
+".\_build\ant_stack_config.o"
+".\_build\nrf_delay.o"
+".\_build\nrf_drv_common.o"
+".\_build\nrf_drv_gpiote.o"
+".\_build\app_button.o"
+".\_build\app_error.o"
+".\_build\app_timer.o"
+".\_build\nrf_assert.o"
+".\_build\softdevice_handler.o"
+".\_build\arm_startup_nrf51.o"
+".\_build\system_nrf51.o"
+--library_type=microlib --strict --scatter ".\_build\nrf51422_xxac.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\_build\nrf51422_xxac.map" -o .\_build\nrf51422_xxac.axf
